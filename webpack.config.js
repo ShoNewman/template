@@ -15,10 +15,11 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(), // new line
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Template',
       template: './src/index.html',
       inject: 'body'
-    })
+    }), 
+    new Dotenv()
   ],
   module: {
     rules: [
